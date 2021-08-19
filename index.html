@@ -31,7 +31,7 @@ font-family: 'Share Tech Mono', monospace; */
             color: #FF3A20;
         }
 
-        #profile, #about, #hard, #soft, #suggestion {
+        #profile, #about, #hard, #soft, #suggestion, #social  {
             font-family: 'Nova Mono', monospace;
             color: #29339B;
            text-align: center;
@@ -50,7 +50,34 @@ font-family: 'Share Tech Mono', monospace; */
             color: #F1FEC6;
         }
 
-        img {
+        
+        /* .socialmedia img{
+            
+            width: 150px;
+            margin-left: auto ;
+        } */
+
+        .socialmedia {
+    display: flex;
+    justify-content: center;
+}
+.imagem {
+  /* width: 120px; */
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+
+#linkedin img, #github img {
+    display: flex;
+    width: 150px;
+    margin-top: 1px;
+}
+
+      
+        
+
+    #fotoperfil{
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -61,6 +88,7 @@ font-family: 'Share Tech Mono', monospace; */
 <section id="secao1">
     <ul>
         <li><a href="#profile">PROFILE</a></li>
+        <li><a href="#social">SOCIAL MEDIA</a></li>
         <li><a href="#about">ABOUT ME</a></li>
         <li><a href="#hard">HARD SKILLS</a></li>
         <li><a href="#soft">SOFT SKILLS</a></li>
@@ -75,7 +103,20 @@ font-family: 'Share Tech Mono', monospace; */
     <h3 id="name">Victor Shin Kamiguchi</H3>
         <br>
         <br>
-
+        <h3 id="social">Social media</h3>
+        <div class="socialmedia">
+          
+            <div class="imagem">
+    <a id="linkedin" href="https://www.linkedin.com/in/victorkamiguchi" target="_blank"> 
+    <img src="/assets/img/logo-linkedin-512.png" alt="logo linkedin">
+    </a>
+    </div>
+    <div class="imagem">
+    <a id="github" href="https://github.com/ShinVK" target="_blank">
+    <img src="/assets/img/pngwing.com.png" alt="Logo github">
+    </a>
+</div>
+        </div>
         <h2 id="profile">Profile</h2>
     <p>
         Nationality: <strong>Brazilian</strong> <br>
@@ -98,7 +139,8 @@ font-family: 'Share Tech Mono', monospace; */
         <li>GIT </li>
         <li>Adobe Photoshop, Adobe Illustrator</li>
         <li>Corel Draw</li>
-        <li>Microsoft Office - WORd, EXCEL and Power Point</li>
+        <li>Sony Vegas</li>
+        <li>Microsoft Office - WORD, EXCEL and Power Point</li>
         <li>Visual basic for Applications - Microsoft EXCEL</li>
         <li>HTM & CSS (in progress)</li>
  
