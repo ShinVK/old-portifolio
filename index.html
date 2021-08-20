@@ -11,130 +11,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,200&family=Nova+Mono&family=Share+Tech+Mono&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 
-    <style>
-        /* font-family: 'Montserrat', sans-serif;
-font-family: 'Nova Mono', monospace;
-font-family: 'Share Tech Mono', monospace; */
-        * {
-            margin: 0;
-            padding: 0;
-
-        }
-
-        #secao1 {
-            background-color: #93A3B1;
-
-        }
-
-        #name {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 32px;
-            text-align: center;
-            color: #FF3A20;
-        }
-
-        #profile,
-        #about,
-        #hard,
-        #soft,
-        #suggestion,
-        #social {
-            font-family: 'Nova Mono', monospace;
-            color: #29339B;
-            text-align: center;
-            font-size: 30px;
-        }
-
-        p,
-        li {
-            font-family: 'Share Tech Mono', monospace;
-            font-size: 23px;
-            text-align: center;
-
-        }
-
-        a {
-            text-decoration: none;
-            color: #F1FEC6;
-        }
-
-
-        /* .socialmedia img{
-            
-            width: 150px;
-            margin-left: auto ;
-        } */
-
-        .socialmedia {
-            display: flex;
-            justify-content: center;
-            height: 150px;
-        }
-
-        .imagem {
-            /* width: 120px; */
-       
-            position: relative;
-            text-align: center;
-        }
-
-        #linkedin img,
-        #github img {
-            display: flex;
-            width: 150px;
-            margin-top: -10px;
-            margin-bottom: 10px;
-        }
-
-
-
-
-        #fotoperfil {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            /* border-radius: 30%; */
-        }
-
-        .menu {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: 66px;
-            background-color: #322214;
-        }
-
-        .menu li {
-            padding: 20px;
-            display: inline-flex;
-            position: relative;
-            border-right: 1px solid black;
-        }
-
-        .menu li a {
-            display: block;
-
-        }
-
-        .menu li a:hover{
-        background:#333; 
-        color:#fff; 
-   
-       
-        text-shadow:0px 0px 5px #fff; 
-}
-
-        .menu ul {
-            list-style: none;
-        }
-    </style>
 </head>
 
 <body>
-    <section id="secao1">
-        <div class="menu">
+    <section class="secao1 bg-color1">
+        <!-- <div class="menu">
             <ul>
                 <li><a href="#profile">PROFILE</a></li>
                 <li><a href="#social">SOCIAL MEDIA</a></li>
@@ -144,14 +30,36 @@ font-family: 'Share Tech Mono', monospace; */
                 <li><a href="#suggestion">Recommend</a></li>
             </ul>
 
+        </div> -->
+        <div class="profile">
+            <div class="card-perfil">
+
+                <div class="foto-container">
+                    <img id="fotoperfil" src="./assets/img/fundo transparente.png"
+                        alt="Autoretrato Victor Shin Kamiguchi">
+
+
+                </div>
+
+                <div class="profile-text">
+                    <h1 class="title">Victor Shin Kamiguchi</h1><br>
+                    <h2 class="sub-title">Profile</h2>
+                    <p class="prof-text">
+                        <span class="negrito">Nacionalidade:</span> Brasileira <br>
+                        <span class="negrito">Cidade/Estado:</span> Londrina - PR <br>
+                        <span class="negrito">Idade:</span> 27 anos <br>
+                    </p>
+                    <h2 class="sub-title aboutmetitle">Sobre mim</h2>
+                    <p class="aboutme-text">
+                        Sou formado em Engenharia Agronômica na Escola Superior de Agricultura "Luiz de Queiroz"/Universidade de São Paulo. Atualmente estudo programação na TRYBE, para ser desenvolvedor Fullstack.
+                    </p>
+                </div>
+            </div>
         </div>
-        <img id="fotoperfil" src="./assets/img/fundo transparente.png" alt="Autoretrato Victor Shin Kamiguchi" width="300px">
 
 
 
-
-
-        <h3 id="name">Victor Shin Kamiguchi</H3>
+        <!-- <h3 id="name">Victor Shin Kamiguchi</H3>
         <br>
         <br>
         <h3 id="social">Social media</h3>
@@ -220,7 +128,7 @@ font-family: 'Share Tech Mono', monospace; */
         <br>
         <br>
 
-        <a href="#fotoperfil"> Picture profile </a>
+        <a href="#fotoperfil"> Picture profile </a> -->
 
     </section>
 </body>
