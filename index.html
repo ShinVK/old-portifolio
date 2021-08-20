@@ -14,11 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
 <body>
+   
     <section class="secao1 bg-color1">
         <!-- <div class="menu">
             <ul>
@@ -31,7 +35,12 @@
             </ul>
 
         </div> -->
-        <div class="profile">
+        <a id="btn-button" href="#home" class="btn btn-white btn-animated home">Home</a>
+        <a id="ids-button" href="#idskills" class="btn btn-white btn-animated">Habilidades</a>
+        <a id="sug-button" href="#suggestion" class="btn btn-white btn-animated">Recomendações</a>
+        <a id="sm-button" href="#socialmedias" class="btn btn-white btn-animated">Redes sociais</a>
+
+        <div id="home"class="profile">
             <div class="card-perfil">
 
                 <div class="foto-container">
@@ -55,7 +64,9 @@
                         Queiroz"/Universidade de São Paulo. Atualmente estudo programação na TRYBE, para ser
                         desenvolvedor Fullstack.
                     </p>
-                    <a href="#idskills" class="btn btn-white btn-animated">Habilidades</a>
+                    <!-- <a href="#idskills" class="btn btn-white btn-animated">Habilidades</a>
+                    <a href="#suggestion" class="btn btn-white btn-animated">Recomendações</a>
+                    <a href="#socialmedias" class="btn btn-white btn-animated">Redes sociais</a> -->
                 </div>
             </div>
         </div>
@@ -97,11 +108,41 @@
             </div>
     </section>
 
+    <section class="secao1">
+        <h1 id="suggestion" class="skills">Recomendações</h2>
+            <div class="skillscontent">
+                <div class="hardskills content-site">
+                    <h3 class="subtitle4">Sites</h3>
+                    <ul class="list">
+                       <li> <a href="https://blog.betrybe.com/" target="_blank">Blog TRYBE</a> </li><br>
+                       <li> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN</a> </li><br>
+                       <li> <a href="https://validator.w3.org/" target="_blank">W3c Validator</a> </li><br>
+                       <li> <a href="https://unsplash.com/" target="_blank">Unsplash (for images)</a> </li>
+                    </ul>
+                </div>
+           
+
+            </div>
+    </section>
+
+
     <!-- <section class="secao1 bg-color2"> -->
-        <section class="secao1 bg-color2">
-        
+        <section id="socialmedias" class="secao1 bg-color2">
+            
         <div class="social">
             <h2 class="huee">Redes sociais</h1>
+                <div class="imagem">
+                    <div class="imgcontent2"></div>
+                    <a id="linkedin" href="https://www.linkedin.com/in/victorkamiguchi" target="_blank">
+                        <img src="/assets/img/logo-linkedin-512.png" alt="logo linkedin">
+                    </a>
+                </div>
+                <div class="imagem">
+                    <a id="github" href="https://github.com/ShinVK" target="_blank">
+                        <img src="/assets/img/pngwing.com.png" alt="Logo github">
+                    </a>
+                </div>
+                </div>
         </div>
     </section>
 

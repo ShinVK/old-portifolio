@@ -2,6 +2,7 @@
 font-family: 'Nova Mono', monospace;
 font-family: 'Share Tech Mono', monospace; 
 font-family: 'Lato', sans-serif;
+font-family: 'PT Sans', sans-serif;
 */
 
 /* cores:
@@ -19,11 +20,11 @@ cinza claro: #EEEEEE*/
 html { scroll-behavior: smooth;}
 
 body {
-    font-family: 'Share Tech Mono', monospace; 
+    font-family: 'PT Sans', sans-serif;
     color: #787A91 ;
     font-weight: normal;
     padding: 30px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .secao1 {
@@ -34,7 +35,7 @@ body {
 .bg-color1 {
     background-image: linear-gradient(to left bottom, rgba(15, 4, 76, 0.788), rgba(20, 30, 97, 0.767)),
     url(../assets/img/photo-1629233796556-92a60986ea54.jpeg);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
     background-position: top;
     background-size: cover;
 }
@@ -42,7 +43,7 @@ body {
 .bg-color2 {
     background-image: linear-gradient(to left bottom, rgba(15, 4, 76, 0.788), rgba(20, 30, 97, 0.767)),
     url(../assets/img/photo-1625111970819-5f32ac1885c3.jpeg);
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    /* clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); */
     
     background-size: cover;
   
@@ -84,6 +85,7 @@ body {
     border-radius: 100px;
    box-shadow:0 10px 20px rgba(0, 0, 0, 0.479);
     animation: abertura .8s ease-out .5s;
+    animation-fill-mode: backwards;
     
 }
 /* .title {
@@ -91,8 +93,9 @@ body {
 } */
 
 .foto-container img{
-    width: 500px;
+    width: 350px;
     display: inline-block;
+    border-radius: 50%;
 }
 
 /* .prof-text {
@@ -102,13 +105,14 @@ body {
 .title {
     text-transform: uppercase;
     color: rgb(255, 194, 61);
-    font-family: 'Nova Mono', monospace;
+    font-family: 'PT Sans', sans-serif;
     font-size: 40px;
+    font-weight: bold;
 }
 
 .sub-title {
     color: #44C;
-    font-family: 'Nova Mono', monospace;
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
     
 }
@@ -122,7 +126,7 @@ body {
 }
 
 .aboutme-text {
-    padding: 5px 7px 10px 7px;
+    padding: 5px 7px 45px 7px;
     line-height: 30px;
 
 }
@@ -144,8 +148,34 @@ body {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.479);
 }
 
+.content-site {
+    width: 500px;
+    background-color: #787A91;
+    padding: 30px;
+    
+    margin: 50px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.479);
+}
+
+.content-site a{
+    text-decoration: none;
+    color: #141E61;
+}
+
 .subtitle3 {
     color: #777;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    
+}
+
+#suggestion {
+    color: #0F044C;
+}
+
+.subtitle4 {
+    color: #0F044C;
     text-transform: uppercase;
     padding-bottom: 10px;
     
@@ -161,15 +191,44 @@ body {
     justify-content: center;
 }
 
+#btnhome {
+    position: fixed;
+    box-shadow: 0 10 20px rgba(0,0,0,.4);
+    z-index: 20;
+}
+
 .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 10px 10px;
+    margin: 10px;
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
     position: relative;
-    font-size: 20px;
+    font-size: 15px;
+
+}
+
+#btn-button {
+    position: fixed;
+    top: 15%;
+}
+
+#ids-button {
+    position: fixed;
+    top: 25%;
+}
+
+#sug-button {
+    position: fixed;
+    top: 35%;
+
+}
+
+#sm-button {
+    position: fixed;
+    top: 45%;
 
 }
 
@@ -218,10 +277,10 @@ body {
 }
 
 .huee {
-    z-index: 3;
-    font-size: 100px;
+   
+    font-size: 50px;
     color: #fff;
-  
+    letter-spacing: 15px;
     position: absolute;
     top: 250px;
     left: 50%;
@@ -231,6 +290,31 @@ body {
 
 .social {
     position: relative;
+}
+
+#linkedin img {
+    position: absolute;
+    z-index: 10;
+    top: 400px;
+    left: 50%;
+    width: 150px;
+}
+
+#github img {
+    position: absolute;
+    z-index: 10;
+    top: 400px;
+    left: 40%;
+    width: 150px;
+}
+
+
+
+.imgcontent2 {
+    display: flex;
+    
+    position: absolute;
+    top: 400px;
 }
 
 /* #secao1 {
