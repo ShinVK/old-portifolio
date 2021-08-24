@@ -46,8 +46,28 @@ body {
 .bg-color1 {
   background-color: #000401; }
 
-.liselect {
-  color: #000401; }
+.bg-color2 {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, rgba(0, 4, 1, 0.8), rgba(40, 42, 44, 0.7)), url(/assets/img/photo-1553526665-dbfe3e8a6fcc.jpeg);
+  background-size: cover;
+  background-position: top; }
+
+.new1 {
+  border: 1px solid #E5E8E8;
+  width: 114rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  animation: moveInBottom .5s ease-out .25s;
+  animation-fill-mode: backwards; }
+
+.vl {
+  height: 45rem;
+  border-right: 3px solid #4E545C;
+  position: absolute;
+  z-index: 10000;
+  top: 27%;
+  left: 51.2%; }
 
 body {
   font-size: 1.6rem;
@@ -56,7 +76,7 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1rem 2rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s;
@@ -174,7 +194,7 @@ body {
     left: 60%; }
 
 .nav__menu {
-  background: #000401;
+  background: transparent;
   width: 100%; }
   .nav__menu-itens {
     margin: 0 auto;
@@ -185,7 +205,7 @@ body {
       display: flex;
       justify-content: left;
       padding-top: 2rem;
-      padding-left: 17.5rem; }
+      padding-left: 18rem; }
     .nav__menu-itens-list li {
       list-style: none;
       padding-left: 2rem;
@@ -199,7 +219,7 @@ body {
   animation-name: moveinLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  padding-top: 10rem; }
+  padding-top: 5rem; }
   .profile__heading img {
     width: 30rem; }
   .profile__heading-title {
@@ -222,7 +242,7 @@ body {
   animation-name: moveInRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  padding-top: 20rem; }
+  padding-top: 15rem; }
   .profile__text-title {
     color: #8D9797;
     z-index: 1;
@@ -261,10 +281,57 @@ body {
 
 .secao1 .btn-2 {
   position: absolute;
-  top: 80%;
-  left: 64%; }
+  top: 85%;
+  left: 73.5%; }
 
 .secao1 .btn-3 {
   position: absolute;
-  top: 80%;
+  top: 85%;
+  left: 20%; }
+
+.skills__content {
+  padding-top: 15rem; }
+  .skills__content-soft {
+    text-align: right;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .skills__content-hard {
+    animation-name: moveinLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+
+.hard-list {
+  padding-top: 5rem; }
+
+.hard-list2 {
+  padding-top: 14rem; }
+
+.textwhite2 {
+  color: #8D9797;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 4rem; }
+
+.texttransp2 {
+  color: #8D9797;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 4rem;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #8D9797; }
+
+.habilities-section .btn-2 {
+  position: absolute;
+  top: 85%;
+  left: 73.5%; }
+
+.habilities-section .btn-3 {
+  position: absolute;
+  top: 85%;
   left: 20%; }
